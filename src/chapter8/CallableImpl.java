@@ -8,23 +8,22 @@ public class CallableImpl implements Callable {
         int sum=0;
         for (int i = 0; i < 10; i++) {
             sum+=i;
-            TimeUnit.SECONDS.sleep(5);
         }
         return sum;
     }
 
     public static void main(String[] args) {
-        new Thread(new RunnableImpl()).start();
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(5, 5, 100, TimeUnit.SECONDS, new ArrayBlockingQueue<>(10));
         Future submit = threadPoolExecutor.submit(new CallableImpl());
-        threadPoolExecutor.shutdown();
-
         try {
-            System.out.println(submit.get());
+            Object o = submit.get();
+           System.out.println(o);
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
+        threadPoolExecutor.shutdown();
+
     }
 }

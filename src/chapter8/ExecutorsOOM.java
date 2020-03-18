@@ -6,6 +6,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 public class ExecutorsOOM {
     private static ExecutorService executor = Executors.newFixedThreadPool(15);
+//    ThreadPoolExecutor
     public static void main(String[] args) {
         for (int i = 0; i < Integer.MAX_VALUE; i++) {
             executor.execute(new SubThread());
