@@ -11,18 +11,21 @@
 
 package CodingPractice.yxxy.c_005;
 
-public class T implements Runnable {
+public class T2_volatile implements Runnable {
 
-	private int count = 10;
+	private /*volatile*/ int count = 0;
 	
 	public /*synchronized*/ void run() {
-		count--;
-		System.out.println(Thread.currentThread().getName() + " count = " + count);
+		for (int i = 0; i < 200; i++) {
+			count++;
+			System.out.println(Thread.currentThread().getName() + " count = " + count);
+		}
+
 	}
 	
 	public static void main(String[] args) throws InterruptedException {
-		T t = new T();
-		for(int i=0; i<5; i++) {
+		T2_volatile t = new T2_volatile();
+		for(int i=0; i<500; i++) {
 			Thread thread = new Thread(t, "THREAD" + i);
 			thread.start();
 		}

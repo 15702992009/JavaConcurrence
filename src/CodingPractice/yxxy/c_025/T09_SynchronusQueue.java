@@ -1,4 +1,4 @@
-﻿package CodingPractice.yxxy.c_025;
+package CodingPractice.yxxy.c_025;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.SynchronousQueue;

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * reentrantlock用于替代synchronized
  * 由于m1锁定this,只有m1执行完毕的时候,m2才能执行
  * 这里是复习synchronized最原始的语义
@@ -22,7 +22,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class ReentrantLock5 extends Thread {
 		
-	private static ReentrantLock lock=new ReentrantLock(true); //参数为true表示为公平锁，请对比输出结果
+	private static ReentrantLock lock=new ReentrantLock(false); //参数为true表示为公平锁，请对比输出结果
     public void run() {
         for(int i=0; i<100; i++) {
             lock.lock();

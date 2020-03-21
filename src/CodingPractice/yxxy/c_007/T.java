@@ -1,9 +1,9 @@
-﻿/**
+package CodingPractice.yxxy.c_007;
+/**
  * 同步和非同步方法是否可以同时调用？
  * @author mashibing
  */
 
-package CodingPractice.yxxy.c_007;
 
 public class T {
 

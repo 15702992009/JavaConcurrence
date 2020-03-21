@@ -9,7 +9,7 @@
  * 
  * @author mashibing
  */
-package CodingPractice.yxxy.c_021;
+package CodingPractice.yxxy.c_021NOW;
 
 import java.util.LinkedList;
 import java.util.concurrent.TimeUnit;

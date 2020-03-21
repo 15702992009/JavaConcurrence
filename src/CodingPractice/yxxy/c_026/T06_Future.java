@@ -1,8 +1,7 @@
-﻿/**
+package CodingPractice.yxxy.c_026;
+/**
  * 认识future
  */
-package CodingPractice.yxxy.c_026;
-
 import java.util.concurrent.*;
 
 public class T06_Future {

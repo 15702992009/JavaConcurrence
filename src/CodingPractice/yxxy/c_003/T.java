@@ -1,10 +1,9 @@
-﻿/**
+package CodingPractice.yxxy.c_003;
+/**
  * synchronized关键字
  * 对某个对象加锁
  * @author mashibing
  */
-
-package CodingPractice.yxxy.c_003;
 
 public class T {
 
