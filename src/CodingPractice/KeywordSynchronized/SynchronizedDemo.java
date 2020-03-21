@@ -1,8 +1,4 @@
-package CodingPractice.keyword_synchronized;
-
-import org.junit.Test;
-
-import java.util.concurrent.TimeUnit;
+package CodingPractice.KeywordSynchronized;
 
 /**
  * synchronized关键字的使用说明

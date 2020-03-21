@@ -4,7 +4,7 @@
  * 比较m1和m2
  * @author mashibing
  */
-package CodingPractice.keyword_synchronized;
+package CodingPractice.KeywordSynchronized;
 
 import java.util.concurrent.TimeUnit;
 
