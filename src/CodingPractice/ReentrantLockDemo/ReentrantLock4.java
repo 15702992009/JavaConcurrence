@@ -1,4 +1,4 @@
-package CodingPractice.yxxy.c_020;
+package CodingPractice.ReentrantLockDemo;
 /**
  * reentrantlock用于替代synchronized
  * 由于m1锁定this,只有m1执行完毕的时候,m2才能执行

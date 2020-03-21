@@ -16,7 +16,7 @@
  * 
  * @author mashibing
  */
-package CodingPractice.reentrantDemo;
+package CodingPractice.ReentrantLockDemo;
 
 import java.util.concurrent.locks.ReentrantLock;
 
