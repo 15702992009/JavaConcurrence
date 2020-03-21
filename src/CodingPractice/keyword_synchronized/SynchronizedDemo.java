@@ -15,9 +15,9 @@ public class SynchronizedDemo {
     Object object = new Object();
 
     //锁代码块,指定锁对象
-    public void m() {
+    public void m1() {
 
-        System.out.println("ThreadName  " + Thread.currentThread().getName());
+        System.out.println("ThreadName " + Thread.currentThread().getName());
         synchronized (object) { //任何线程要执行下面的代码，必须先拿到object对象锁
             while (true) ;
         }
@@ -43,9 +43,18 @@ public class SynchronizedDemo {
         Thread[] threads = new Thread[10];
         SynchronizedDemo synchronizedDemo = new SynchronizedDemo();
         for (int i = 0; i < 10; i++) {
-            threads[i] = new Thread(() -> {
-                synchronizedDemo.m();
-            });
+            //lambda表达式
+           /* new Thread(() -> t.m1(), "t1").start();
+            new Thread(() -> t.m2(), "t2").start();*/
+            //普通匿名内部类
+            /*new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    synchronizedDemo.m1();
+                }
+            });*/
+            //函数式编程
+            threads[i] = new Thread(synchronizedDemo::m1, "Thread - " + i);
             threads[i].start();
         }
 
