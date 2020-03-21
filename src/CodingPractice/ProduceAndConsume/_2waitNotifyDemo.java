@@ -1,4 +1,4 @@
-package CodingPractice.produceAndConsume;
+package CodingPractice.ProduceAndConsume;
 /**
  * 使用wait和notify/notifyAll来实现生产者/消费者模型
  * 多个生产消费者线程练习

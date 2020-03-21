@@ -1,4 +1,4 @@
-package CodingPractice.produceAndConsume;
+package CodingPractice.ProduceAndConsume;
 /**
  * 生产消费者
  * 使用Lock和Condition来实现

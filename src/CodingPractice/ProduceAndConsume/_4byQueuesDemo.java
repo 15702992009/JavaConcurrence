@@ -1,4 +1,4 @@
-package CodingPractice.produceAndConsume;
+package CodingPractice.ProduceAndConsume;
 
 /**
  * 基于阻塞队列的生产者消费者模型
