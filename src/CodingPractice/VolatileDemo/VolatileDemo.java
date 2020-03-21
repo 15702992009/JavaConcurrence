@@ -15,7 +15,7 @@
  * volatile并不能保证多个线程共同修改running变量时所带来的不一致问题，也就是说volatile不能替代synchronized
  * @author mashibing
  */
-package CodingPractice.volatileDemo;
+package CodingPractice.VolatileDemo;
 
 import java.util.concurrent.TimeUnit;
 

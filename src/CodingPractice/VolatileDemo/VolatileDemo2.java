@@ -3,7 +3,7 @@
  * 运行下面的程序，并分析结果
  * @author mashibing
  */
-package CodingPractice.volatileDemo;
+package CodingPractice.VolatileDemo;
 
 import java.util.ArrayList;
 import java.util.List;
