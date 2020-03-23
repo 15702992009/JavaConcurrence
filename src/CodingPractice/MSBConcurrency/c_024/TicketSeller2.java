@@ -27,6 +27,8 @@ public class TicketSeller2 {
 		
 		for(int i=0; i<10; i++) {
 			new Thread(()->{
+
+				//虽然tickets.size()是原子性的 tickets.remove(0)也是原子性,但是结合在一起就并不能保证原子性
 				while(tickets.size() > 0) {
 					
 					try {
