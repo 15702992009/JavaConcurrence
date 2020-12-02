@@ -1,6 +1,8 @@
 # 项目概述
 
-## TheArtOfJavaConcurrentProgrammingDemo.chapter2 - TheArtOfJavaConcurrentProgrammingDemo.chapter8      
-这部分是java并发编程的艺术书中的源代码练习
-## Jdk8ConcurrentApi.doc.concurrent包     
-对java.util.concurrent包中的接口实现类进行了实例练习.
+项目包括四个部分
+
+1. java8中的并发编程API练习
+2. 《java并发编程的艺术》书籍的全书练习题和代码练习
+3. 《马士兵并发编程大全》习题练习
+4. 总结并发编程，绘制Xmind思维导图
